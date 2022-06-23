@@ -375,6 +375,11 @@ main section#fale-conosco form .content textarea {
   outline: none;
   font-size: 16px;
 }
+main section#fale-conosco form .content input.error,
+main section#fale-conosco form .content select.error,
+main section#fale-conosco form .content textarea.error {
+  border: 1px solid #e42313;
+}
 
 main section#fale-conosco form .content textarea {
   resize: none;

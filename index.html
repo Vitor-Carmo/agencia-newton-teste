@@ -173,19 +173,19 @@
           </button>
         </div>
 
-        <form action="">
+        <form>
           <div class="content">
             <div>
-              <input placeholder="Nome" name="nome" type="text" />
-              <input placeholder="E-mail" name="nome" type="email" />
-              <select name="assunto">
+              <input placeholder="Nome" name="name" id="name" type="text" />
+              <input placeholder="E-mail" name="email" id="email"  type="email" />
+              <select name="subject" id="subject">
                 <option value="" disabled selected>Assunto</option>
                 <option value="Saúde">Saúde</option>
                 <option value="Medicamento">Medicamento</option>
                 <option value="Outros">Outros</option>
               </select>
             </div>
-            <textarea name="mensagem" placeholder="Mensagem"></textarea>
+            <textarea name="message" id="message" placeholder="Mensagem"></textarea>
           </div>
           <button class="button">Enviar</button>
         </form>
@@ -233,4 +233,6 @@
       </div>
     </footer>
   </body>
+
+  <script src="validate_form.js"></script>
 </html>
