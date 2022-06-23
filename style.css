@@ -1,0 +1,722 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: white;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Canaro-Light";
+  font-weight: normal;
+  font-style: normal;
+  src: url("assets/fonts/Canaro-Light.otf");
+}
+
+@font-face {
+  font-family: "Canaro-SemiBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("assets/fonts/Canaro-SemiBold.otf");
+}
+
+@font-face {
+  font-family: "Segoe-UI-Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("assets/fonts/Segoe-UI-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Segoe-UI-Bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("assets/fonts/Segoe-UI-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Efra-Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("assets/fonts/Efra-Regular.ttf");
+}
+
+.container {
+  max-width: 1057px;
+  margin: 0 auto;
+}
+
+section .title-effect {
+  font-family: "Canaro-SemiBold";
+  color: #575756;
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 43px;
+}
+
+section .title-effect::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #575756;
+  top: 50%;
+  transform: translateX(10px);
+  margin-bottom: 43px;
+}
+
+section .title {
+  font-family: "Canaro-SemiBold";
+  font-size: 50px;
+  line-height: 1.2em;
+  margin-bottom: 36px;
+  color: #575756;
+}
+
+section .text {
+  font-family: "Segoe-UI-Regular";
+  font-size: 16px;
+  line-height: 1.3em;
+  margin-bottom: 53px;
+}
+
+section .button {
+  font-family: "Segoe-UI-Bold";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 145px;
+  height: 45px;
+  background: #e42313;
+  border-radius: 10px;
+  color: white;
+  font-size: 21px;
+  border: none;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 30px;
+  max-width: 100px;
+  height: 10vh;
+}
+
+header > div {
+  display: flex;
+}
+
+header > div > ul {
+  display: flex;
+  justify-items: flex-end;
+}
+
+header > div > ul li {
+  margin-right: 20px;
+}
+
+header > div > ul li a {
+  font-family: "Segoe-UI-Regular";
+  font-size: 16px;
+  color: #575756;
+}
+
+main section.featured-section {
+  position: relative;
+  background: url(/assets/images/background-featured.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  width: 100%;
+}
+
+main section.featured-section > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+  backdrop-filter: brightness(0.65);
+  padding: 0 30px;
+}
+
+main section.featured-section > div {
+  color: white;
+}
+
+main section.featured-section > div h1 {
+  font-family: "Canaro-SemiBold";
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+main section.featured-section > div p {
+  font-family: "Canaro-Light";
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+
+main section.featured-section > div .slide {
+  position: absolute;
+  bottom: 40px;
+}
+
+main section.featured-section > div .slide button {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: none;
+  background-color: #848484;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+main section.featured-section > div .slide button:last-child {
+  margin-right: 0;
+}
+
+main section.featured-section > div .slide button.active {
+  background-color: white;
+}
+
+main section#quem-somos,
+main section#nossa-equipe,
+main section#nosso-espaco {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  padding-top: 60px;
+}
+
+main section#quem-somos > img,
+main section#nossa-equipe > img {
+  width: 100%;
+  height: auto;
+}
+
+main section#quem-somos > img {
+  margin-right: 108px;
+}
+
+main section#nossa-equipe > img {
+  margin-left: 108px;
+}
+
+main section#nosso-espaco {
+  position: relative;
+}
+
+main section#nosso-espaco .bg-effect {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+}
+
+main section#nosso-espaco .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbfbfb;
+  margin: 0 5%;
+  height: 825px;
+  width: 100%;
+}
+
+main section#nosso-espaco .content .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1288px;
+  transform: translateY(12%);
+  padding: 0 30px;
+}
+
+main section#nosso-espaco .content > div:nth-child(1) {
+  z-index: 1;
+}
+
+main section#nosso-espaco .our-place-images {
+  margin-left: 108px;
+  width: 100%;
+  height: auto;
+}
+
+main section#nosso-espaco .our-place-images > img {
+  width: 37.76vw;
+  max-width: 725px;
+  height: auto;
+}
+
+main section#nosso-espaco .our-place-images .scroll-options {
+  margin-bottom: 15px;
+}
+
+main section#nosso-espaco .our-place-images button {
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  border: 1px solid #575756;
+  cursor: pointer;
+}
+
+main section#nosso-espaco .our-place-images button:nth-child(2) img {
+  transform: rotate(180deg);
+}
+
+main section#nosso-espaco .our-place-images button:nth-child(1) {
+  margin-right: 60px;
+}
+
+main section#fale-conosco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 30px;
+  padding-top: 120px;
+  margin-bottom: 60px;
+}
+
+main section#fale-conosco p.text {
+  max-width: 342px;
+  text-align: center;
+}
+
+main section#fale-conosco .links {
+  display: flex;
+  margin-bottom: 30px;
+  padding: 0 30px;
+}
+
+main section#fale-conosco .links button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 143px;
+  height: 57px;
+  background: #fbfbfb;
+  border-radius: 10px;
+  border: none;
+
+  font-family: "Segoe-UI-Regular";
+  font-size: 16px;
+  color: #e42313;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+main section#fale-conosco .links button:last-child {
+  margin-right: 0;
+}
+
+main section#fale-conosco .links button img {
+  margin-right: 10px;
+}
+
+main section#fale-conosco form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  background: #fbfbfb;
+  box-shadow: 7px 7px 15px #9c9c9c29;
+  border-radius: 10px;
+  padding: 50px 40px;
+  margin: 0 30px;
+  margin-bottom: 80px;
+}
+
+main section#fale-conosco form .content {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main section#fale-conosco form .content > div {
+  display: block;
+  width: 100%;
+  margin-right: 30px;
+}
+
+main section#fale-conosco form .content input,
+main section#fale-conosco form .content select,
+main section#fale-conosco form .content textarea {
+  font-family: "Efra-Regular";
+  width: 100%;
+  background: #f1f1f1bd;
+  border-radius: 20px;
+  border: none;
+  padding: 28px 20px;
+  outline: none;
+  font-size: 16px;
+}
+
+main section#fale-conosco form .content textarea {
+  resize: none;
+}
+
+main section#fale-conosco form .content input {
+  margin-bottom: 20px;
+}
+
+footer {
+  width: 100%;
+  background: #575756;
+}
+
+footer .container {
+  padding: 0 30px;
+}
+
+footer .container .items,
+footer .container .copyright {
+  padding: 40px 0;
+}
+
+footer .container .copyright p {
+  font-family: "Segoe-UI-Regular";
+  text-align: center;
+}
+
+footer .container .items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .container .items ul {
+  display: flex;
+  align-items: center;
+}
+
+footer .container .items ul li {
+  margin-right: 30px;
+}
+
+footer .container .items ul li a {
+  font-family: "Segoe-UI-Regular";
+  font-size: 16px;
+  color: white;
+}
+
+footer .container .items .div-empty {
+  width: 103px;
+}
+
+footer .container .items .social-medias a {
+  margin-right: 15px;
+}
+
+footer .container .items .social-medias a:last-child {
+  margin-right: 0;
+}
+
+footer .container .items .social-medias a img {
+  height: 20px;
+}
+
+footer .container .copyright p {
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  section .title,
+  section .title-effect,
+  section .text {
+    text-align: center;
+  }
+
+  section .title-effect::after {
+    width: 100%;
+    height: 2px;
+    top: 120%;
+    left: 0;
+    transform: translateX(0);
+  }
+
+  section .title-effect {
+    margin-bottom: 25px;
+  }
+
+  section .text {
+    max-width: 580px;
+  }
+
+  main section.featured-section > div .slide button {
+    width: 18px;
+    height: 18px;
+    margin-right: 20px;
+  }
+
+  main section#quem-somos,
+  main section#nosso-espaco {
+    flex-direction: column;
+    margin-bottom: 120px;
+  }
+
+  main section#nossa-equipe {
+    flex-direction: column-reverse;
+  }
+
+  main section#nossa-equipe > img,
+  main section#quem-somos > img {
+    width: initial;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  main section#quem-somos > img {
+    margin-right: 0;
+  }
+
+  main section#nossa-equipe > img {
+    margin-left: 0;
+  }
+
+  main section#quem-somos > div,
+  main section#nosso-espaco > div,
+  main section#nossa-equipe > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main section#nosso-espaco {
+    padding: 0;
+  }
+
+  main section#nosso-espaco .bg-effect {
+    display: none;
+  }
+
+  main section#nosso-espaco .content {
+    height: auto;
+  }
+
+  main section#nosso-espaco .content .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    transform: translateY(0%);
+    padding-top: 60px;
+  }
+
+  main section#nosso-espaco .our-place-images {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-left: 0;
+  }
+
+  main section#nosso-espaco .our-place-images button {
+    width: 45px;
+    height: 45px;
+  }
+
+  main section#nosso-espaco .our-place-images .scroll-options {
+    margin-top: 30px;
+    margin-bottom: 45px;
+  }
+
+  main section#nosso-espaco .our-place-images img {
+    width: initial;
+    max-width: 100%;
+  }
+
+  main section#nosso-espaco .content .container > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  main section.featured-section > div .slide {
+    bottom: 15px;
+  }
+
+  main section.featured-section > div .slide button {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+  }
+
+  main section#fale-conosco form .content {
+    flex-direction: column;
+  }
+
+  main section#fale-conosco form .content select {
+    margin-bottom: 20px;
+  }
+
+  main section#fale-conosco form .content textarea {
+    height: 263px;
+  }
+
+  footer .container .items {
+    flex-direction: column;
+  }
+
+  footer .container .items ul {
+    margin-bottom: 20px;
+  }
+
+  footer .container .items ul li {
+    margin-right: 25px;
+  }
+
+  footer .container .items ul li:last-child {
+    margin-right: 0;
+  }
+
+  footer .container .items ul li a {
+    font-size: 20px;
+  }
+
+  footer .container .items .div-empty {
+    display: none;
+  }
+
+  main section#fale-conosco .links button {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 0 20px;
+  }
+
+  header > div > ul li {
+    margin-right: 10px;
+  }
+
+  header > div > ul li a {
+    font-size: 14px;
+  }
+
+  section .title {
+    font-size: 35px;
+  }
+
+  section .text {
+    font-size: 18px;
+  }
+
+  section .button {
+    width: 100%;
+  }
+  main section.featured-section > div {
+    padding: 0 20px;
+  }
+  main section.featured-section > div h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  main section.featured-section > div p {
+    font-size: 25px;
+  }
+
+  main section#quem-somos,
+  main section#nossa-equipe,
+  main section#fale-conosco {
+    padding: 0 20px;
+    padding-top: 60px;
+  }
+
+  main section#nosso-espaco {
+    padding: 0;
+    padding-top: 60px;
+  }
+  main section#nosso-espaco .content {
+    margin: 0;
+  }
+
+  main section#nosso-espaco .content .container {
+    padding: 0 20px;
+  }
+
+  main section#nosso-espaco .our-place-images button:nth-child(1) {
+    margin-right: 20px;
+  }
+
+  main section#fale-conosco .links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    padding: 0;
+  }
+  main section#fale-conosco .links button {
+    width: 120px;
+    margin-right: 0;
+  }
+
+  main section#fale-conosco .links button:last-child {
+    margin-bottom: 0;
+  }
+
+  main section#fale-conosco form {
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 60px;
+  }
+
+  main section#fale-conosco form .content > div {
+    margin-right: 0;
+  }
+
+  main section#fale-conosco form .content input,
+  main section#fale-conosco form .content select,
+  main section#fale-conosco form .content textarea {
+    border-radius: 10px;
+    padding: 20px 16px;
+    font-size: 14px;
+  }
+
+  footer .container .items ul {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  footer .container .items ul li {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+
+  footer .container .items ul li:last-child {
+    margin-right: 0;
+  }
+
+  footer .container .items ul li a {
+    font-size: 24px;
+  }
+}

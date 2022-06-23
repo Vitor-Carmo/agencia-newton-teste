@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="preload"
+      href="assets/fonts/Canaro-Light.otf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+    
+    <link
+      rel="preload"
+      href="assets/fonts/Canaro-SemiBold.otf"
+      as="font"
+      type="font/otf"
+      crossorigin="anonymous"
+    />
+    
+    <link
+      rel="preload"
+      href="assets/fonts/Segoe-UI-Regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="preload"
+      href="assets/fonts/Segoe-UI-Bold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="preload"
+      href="assets/fonts/Efra-Regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="preload"
+      href="assets/images/background-featured.png"
+      as="image"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="container">
+      <div>
+        <ul>
+          <li><a href="#quem-somos">Quem somos</a></li>
+          <li><a href="#nossa-equipe">Equipe</a></li>
+          <li><a href="#nosso-espaco">Espaço</a></li>
+          <li><a href="#fale-conosco">Contato</a></li>
+        </ul>
+        <div>
+          <img
+            src="./assets/svg/Icon-feather-search.svg"
+            alt="pesquisar"
+            class="search"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="featured-section">
+        <div>
+          <h1>Lorem ipsum dolor sit amet</h1>
+          <p>Lorem ipsum dolor sit amet</p>
+
+          <div class="slide">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+          </div>
+        </div>
+      </section>
+
+      <section id="quem-somos" class="container">
+        <img src="assets/images/girl.png" alt="" />
+        <div>
+          <h2 class="title-effect">Quem somos</h2>
+
+          <h3 class="title">Lorem ipsum dolor sit amet.</h3>
+
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus
+            bibendum scelerisque. Duis ornare et risus id faucibus. Fusce
+            tincidunt leo elit. Suspendisse potenti. Nunc vestibulum dolor et
+            risus viverra mattis. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Donec a ex quis sapien laoreet eleifend.
+          </p>
+
+          <a class="button" href="#"> Saiba mais </a>
+        </div>
+      </section>
+
+      <section id="nossa-equipe" class="container">
+        <div>
+          <h2 class="title-effect">Nossa equipe</h2>
+
+          <h3 class="title">Lorem ipsum dolor sit amet.</h3>
+
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus
+            bibendum scelerisque. Duis ornare et risus id faucibus. Fusce
+            tincidunt leo elit. Suspendisse potenti. Nunc vestibulum dolor et
+            risus viverra mattis. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Donec a ex quis sapien laoreet eleifend.
+          </p>
+        </div>
+        <img src="assets/images/nossa-equipe.png" alt="" />
+      </section>
+
+      <section id="nosso-espaco">
+        <img class="bg-effect" src="/assets/images/beauty_thing.png" alt="" />
+        <div class="content">
+          <div class="container">
+            <div>
+              <h2 class="title-effect">Nosso espaço</h2>
+
+              <h3 class="title">Lorem ipsum dolor sit amet.</h3>
+
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                luctus bibendum scelerisque. Duis ornare et risus id faucibus.
+                Fusce tincidunt leo elit. Suspendisse potenti. Nunc vestibulum
+                dolor et risus viverra mattis. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Donec a ex quis sapien laoreet
+                eleifend.
+              </p>
+            </div>
+            <div class="our-place-images">
+              <div class="scroll-options">
+                <button><img src="/assets/svg/arrow.svg" alt="" /></button>
+                <button><img src="/assets/svg/arrow.svg" alt="" /></button>
+              </div>
+              <img src="assets/images/place.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fale-conosco" class="container">
+        <h2 class="title">Fale conosco</h2>
+        <p class="text">
+          Quer conversar com a Health Clinic? Basta preencher o formulário
+          abaixo e nós entraremos em contato assim que possível!
+        </p>
+        <div class="links">
+          <button>
+            <img src="/assets/images/phone.png" alt="" />
+            <span>Telefone</span>
+          </button>
+
+          <button>
+            <img src="/assets/images/whatsapp.png" alt="" />
+            <span>WhatsApp</span>
+          </button>
+
+          <button>
+            <img src="/assets/images/wechat.png" alt="" />
+            <span>Wechat</span>
+          </button>
+        </div>
+
+        <form action="">
+          <div class="content">
+            <div>
+              <input placeholder="Nome" name="nome" type="text" />
+              <input placeholder="E-mail" name="nome" type="email" />
+              <select name="assunto">
+                <option value="" disabled selected>Assunto</option>
+                <option value="Saúde">Saúde</option>
+                <option value="Medicamento">Medicamento</option>
+                <option value="Outros">Outros</option>
+              </select>
+            </div>
+            <textarea name="mensagem" placeholder="Mensagem"></textarea>
+          </div>
+          <button class="button">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="items">
+          <div class="div-empty"></div>
+          <ul>
+            <li><a href="#quem-somos">Quem somos</a></li>
+            <li><a href="#nossa-equipe">Equipe</a></li>
+            <li><a href="#nosso-espaco">Espaço</a></li>
+            <li><a href="#fale-conosco">Contato</a></li>
+          </ul>
+          <div class="social-medias">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img
+                src="./assets/images/linkedin.png"
+                alt="pesquisar"
+                class="linkedin"
+              />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img
+                src="./assets/images/facebook.png"
+                alt="pesquisar"
+                class="facebook"
+              />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img
+                src="./assets/images/instagram.png"
+                alt="pesquisar"
+                class="instagram"
+              />
+            </a>
+          </div>
+        </div>
+        <hr />
+        <div class="copyright">
+          <p>Health Clinic São Paulo -Todos os Direitos Reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
